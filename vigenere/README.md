@@ -82,8 +82,6 @@ Nous allons commencer par nous procurer le tableau de Vigenère:
 
 ### EXPLICATIONS
 
-<br>
-      
 #### CHIFFREMENT
 
 Pour le chiffrement, il faut trouver la lettre du message clair dans la première ligne puis la lettre de la clé correpondante dans la colonne [1]. 
@@ -129,8 +127,3 @@ Supposons le mot chiffré `IPGMZ' et toujours la clé 'CLE':
 Répetez l'opération avec chaque lettres du mot `IPGMZ` et vous obtenezle mot: `GECKO`
 
 Voilà, vous venez de déchiffrer votre premier mot chiffré avec le chiffre de Vigenère.
-
-<br>
-
-> [!NOTE]
-> <b>FIN DE PROJET</b>
