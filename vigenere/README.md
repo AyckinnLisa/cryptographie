@@ -1,4 +1,4 @@
-## MODULE 03 - CRYPTOGRAPHY - [Le chiffre de Vigenère](https://fr.wikipedia.org/wiki/Chiffre_de_Vigen%C3%A8re)
+# [Le chiffre de Vigenère](https://fr.wikipedia.org/wiki/Chiffre_de_Vigen%C3%A8re)
 
 ### UN PEU DE CULTURE
 
