@@ -76,7 +76,7 @@ Nous allons commencer par nous procurer le tableau de Vigenère:
 ```
 
 <br>Le tableau représente un rectangle comportant 26 lignes et 26 colonnes, correspondant aux nombre de lettres dans l'alphabet latin.
-<br>Chaque ligne est décalée de 1 et démarre par la lettre suivant la première lettre de la ligne précédente, ce qui décale chaque colonne de 1, et ce, 26 fois, puisqu'i y a 26 lettres.
+<br>Chaque ligne est décalée de 1 et démarre par la lettre suivant la première lettre de la ligne précédente, ce qui décale chaque colonne de `1`, et ce, 26 fois, puisqu'i y a 26 lettres.
 
 <br>
 
@@ -84,7 +84,7 @@ Nous allons commencer par nous procurer le tableau de Vigenère:
 
 #### CHIFFREMENT
 
-Pour le chiffrement, il faut trouver la lettre du message clair dans la première ligne puis la lettre de la clé correpondante dans la colonne [1]. 
+Pour le chiffrement, il faut trouver la lettre du message clair dans la première ligne puis la lettre de la clé correpondante dans la colonne `1`. 
 <br>Si la clé est plus courte que le mot, on boucle la clé du nombre de lettres restantes (CLECLECLE).
       
 Supposons le mot `TORTUE` et la clé `CLE`:
@@ -104,14 +104,14 @@ Voilà, vous venez de chiffrer votre premier mot à l'aide du `chiffre de Vigen�
 
 #### DECHIFFREMENT
 
-Pour le déchiffrement, il faut trouver la lettre de la clé dans la colonne [1], comme pour le chiffrement, puis, chercher la lettre du mot crypté sur la **MEME LIGNE** que la lettre de la clé.
+Pour le déchiffrement, il faut trouver la lettre de la clé dans la colonne `1`, comme pour le chiffrement, puis, chercher la lettre du mot crypté sur la **MEME LIGNE** que la lettre de la clé.
 <br>Ensuite, il faut simplement remonter la clonne jusqu'a la lettre dans la première ligne.
 
 <br>
 
 > [!WARNING]
 > <b>Respectez bien l'ordre d'exécution !</b>
-> <br>La lettre de la clé dans la colonne 1, puis la lettre du mot chiffré sur la première ligne
+> <br>La lettre de la clé dans la colonne `1`, puis la lettre du mot chiffré sur la première ligne
 
 <br>
 
@@ -120,9 +120,9 @@ Supposons le mot chiffré `IPGMZ' et toujours la clé 'CLE':
 ***IPGMZ
 <br>CLECL***
 
-1. Nous cherchons la première lettre de la clé dans la colonne 1, le `C`, ligne 3, comme précédemment
+1. Nous cherchons la première lettre de la clé dans la colonne `1`, le `C`, ligne `3`, comme précédemment
 2. Nous parcourons cette ligne jusqu'à la première lettre du mot chiffré, le `I`. Il se trouve dans la colonne `7`
-3. Nous remontons la colonne jusqu'à la ligne 1 et nous obtenons le `G`.
+3. Nous remontons la colonne jusqu'à la ligne `1` et nous obtenons le `G`.
 
 Répetez l'opération avec chaque lettres du mot `IPGMZ` et vous obtenezle mot: `GECKO`
 
